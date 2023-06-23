@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>online-store</title>
+  </head>
+  <body>
+    <form id="registrationForm">
+      <label for="firstName">Ім'я:</label>
+      <input type="text" id="firstName" required /><br />
+
+      <label for="lastName">Прізвище:</label>
+      <input type="text" id="lastName" required /><br />
+
+      <label for="birthDate">Дата народження:</label>
+      <input type="text" id="birthDate" required /><br />
+      <div class="gender">
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="Чоловік" required />
+        <label for="male">Чоловік</label>
+        <input type="radio" id="female" name="gender" value="Жінка" required />
+        <label for="female">Жінка</label><br />
+      </div>
+
+      <label for="city">Місто:</label>
+      <select id="city" required>
+        <option value="">Оберіть місто</option>
+        <option value="Київ">Київ</option>
+        <option value="Львів">Львів</option>
+        <option value="Одеса">Одеса</option></select
+      ><br />
+
+      <label for="address">Адреса:</label>
+      <textarea id="address" required></textarea><br />
+      <div class="langs">
+        <label>Мови, якими володієте:</label>
+        <input
+          type="checkbox"
+          id="english"
+          name="languages"
+          value="Англійська"
+        />
+        <label for="english">Англійська</label>
+        <input
+          type="checkbox"
+          id="spanish"
+          name="languages"
+          value="Іспанська"
+        />
+        <label for="spanish">Іспанська</label>
+        <input
+          type="checkbox"
+          id="french"
+          name="languages"
+          value="Французька"
+        />
+        <label for="french">Французька</label><br />
+      </div>
+      <button type="button" id="saveButton">Зберегти</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
